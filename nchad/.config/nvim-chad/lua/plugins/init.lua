@@ -12,6 +12,17 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        -- Keep your existing installations here
+        "lua-language-server",
+        "stylua",
+        "basedpyright",
+      },
+    },
+  },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
